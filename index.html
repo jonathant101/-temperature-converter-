@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Conversor de moedas</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+
+  <div class="container">
+    <h1 class="textoInicial"</h1> Conversor de temperaturas super poderoso caseiro</h1>
+    <div class="inputs">
+      <div class="entrada">
+        <div>
+          <input type="radio" id="inputMoney" name="tempIn" value="fahrenheit" checked />
+          <label for="fahrenheit">fahrenheit</label>
+        </div>
+
+        <div>
+          <input type="radio" id="inputMoney" name="tempIn" value="celsius" />
+          <label for="celsius">celsius</label>
+        </div>
+
+        <div>
+          <input type="radio" id="inputMoney" name="tempIn" value="kelvin" />
+          <label for="kelvin">kelvin</label>
+        </div>
+
+        <div class="saida">
+          <div>
+            <input type="radio" id="inputMoney" name="tempOut" value="celsius" checked />
+            <label for="celsius">celsius</label>
+          </div>
+
+          <div>
+            <input type="radio" id="inputMoney" name="tempOut" value="fahrenheit" />
+            <label for="fahrenheit">fahrenheit</label>
+          </div>
+
+          <div>
+            <input type="radio" id="inputMoney" name="tempOut" value="kelvin" />
+            <label for="kelvin">kelvin</label>
+          </div>
+        </div>
+      </div>
+       <div class="selector">
+        <div class="select"></div>
+        <label for="moeda">Insira o valor</label><br />
+        <input type="number" id="valor" size="2" /><br />
+        <div>
+          <button type="submit" onclick="Converter()">Converter</button>
+        </div>
+       </div>
+       <h2 class="resultado" id="resultado"></h2>
+    </div>
+  </div>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
